@@ -18,8 +18,58 @@
 
 using namespace std;
 
+class Game
+{
+};
+
+class Gameboard
+{
+private:
+	void create;
+
+public:
+	int slots[64];
+};
+
+class Queen
+{
+};
+
+class Rook
+{
+};
+
+class Knight
+{
+};
+
+class Bishop
+{
+};
+
+class Pawn
+{
+};
+
 int main()
 {
+	char command;
+	while (true)
+	{
+		cou << "What do you want to do now?\n\t[P]lay\n\t[Q]uit\n\t[S]ettings " << endl;
+		cin >> command;
+		command = toupper(command);
+		switch (command)
+		{
+		case '':
+
+			break;
+
+		default:
+			cout << "not recognizable command" << endl;
+			break;
+		}
+	}
 
 	return 0;
 }
