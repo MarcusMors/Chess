@@ -1,5 +1,6 @@
 #include <iostream>
-//gAAAAAAAAAAAA TIAA GAAAAAAAAAAAA
+//gAAAAAAAAAAAA TIAA GAAAAAAAAAAAA come pelotas
+
 void swap(char tabla[8][8], int x, int y, int a, int b)
 {
 	int temp = tabla[x][y];
