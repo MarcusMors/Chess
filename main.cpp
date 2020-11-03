@@ -1,6 +1,4 @@
 #include <iostream>
-#include <iostream>
-
 //data structures
 // #include <vector>
 // #include <tuple>
@@ -19,50 +17,67 @@
 
 using namespace std;
 
-class Game // Juego
-{
-
-	void createGameboard(int, int);
-};
-void Game::createGameboard(int x, int y)
-{
-}
-
 class Gameboard // Tablero
 {
-private:
-	int width, height;
-	int slots[8][8];
+public:
+	Gameboard(int iWidth = 8, int iHeight = 8)
+	{
+		int slots[iWidth][iHeight];
+	}
+};
+
+class King // Rey
+{
+public:
+	King()
+	{
+	}
 };
 
 class Queen // Reina
 {
-	int points = 9;
+public:
+	Queen()
+	{
+		int points = 9;
+	}
 };
 
 class Rook // Torre
 {
-	int points = 5;
+public:
+	Rook()
+	{
+		int points = 5;
+	}
 };
 
 class Knight // Caballo
 {
-	int points = 3;
+public:
+	Knight()
+	{
+		int points = 3;
+	}
 };
 
 class Bishop // Alfíl
 {
-	int points = 3;
+public:
+	Bishop()
+	{
+		int points = 3;
+	}
 };
 
 class Pawn //Peón
 {
-	int points = 1;
+public:
+	Pawn()
+	{
+		int points = 1;
+	}
 };
-
-int game()
-{
-}
 
 void cleanScreen(int i)
 {
@@ -72,6 +87,18 @@ void cleanScreen(int i)
 		i--;
 		cleanScreen(i);
 	}
+}
+
+int game(int iGameboards = 1, int iKings = 1, int iQueens = 1, int iRooks = 2, int iKnights = 2, int iBishops = 2, int iPawns = 8)
+{
+	Gameboard gameboard[iGameboards];
+	King kings[iKings];
+	Queen queens[iQueens];
+	Rook rooks[iRooks];
+	Knight knights[iKnights];
+	Bishop bishops[iBishops];
+	Pawn pawns[iPawns];
+	return 1;
 }
 
 int main()
