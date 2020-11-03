@@ -79,7 +79,7 @@ public:
 	}
 };
 
-void cleanScreen(int i)
+void cleanScreen(int i = 10)
 {
 	if (i != 0)
 	{
@@ -91,6 +91,7 @@ void cleanScreen(int i)
 
 int game(int iGameboards = 1, int iKings = 1, int iQueens = 1, int iRooks = 2, int iKnights = 2, int iBishops = 2, int iPawns = 8)
 {
+	cout << "creating game" << endl;
 	Gameboard gameboard[iGameboards];
 	King kings[iKings];
 	Queen queens[iQueens];
@@ -98,6 +99,8 @@ int game(int iGameboards = 1, int iKings = 1, int iQueens = 1, int iRooks = 2, i
 	Knight knights[iKnights];
 	Bishop bishops[iBishops];
 	Pawn pawns[iPawns];
+	cleanScreen();
+	cout << "Move" << endl;
 	return 1;
 }
 
