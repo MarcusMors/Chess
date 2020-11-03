@@ -1,29 +1,5 @@
 #include <iostream>
 
-//data structures
-#include <vector>
-#include <tuple>
-#include <array>
-#include <stack>
-
-//mors army
-#include <cstdlib> //program control, sort, rand nums, search & dynamic memory allocation
-#include <string>
-#include <stdlib.h> //srand, rand
-#include <cmath>
-
-//c++20
-#include <format>  //format([object Object], )
-#include <compare> //(a <=> b) returns an obj susch that < 0 || == 0 || > 0
-
-using namespace std;
-<<<<<<< HEAD
-
-int main()
-{
-
-	return 0;
-=======
 void swap(char tabla[8][8], int x, int y, int a, int b)
 {
 	int temp = tabla[x][y];
@@ -59,6 +35,7 @@ void tablero(char m[8][8])
 	cout << "7  |   " << m[7][0] << "   |   " << m[7][1] << "   |   " << m[7][2] << "   |   " << m[7][3] << "   |   " << m[7][4] << "   |   " << m[7][5] << "   |   " << m[7][6] << "   |   " << m[7][7] << " " << endl;
 	cout << "___|_______|_______|_______|_______|_______|_______|_______|_______" << endl;
 }
+
 void cambio(char tabla[8][8], int x = 0, int y = 0, int a = 0, int b = 0)
 {
 	cout << "Ingrese" << endl;
@@ -68,10 +45,10 @@ void cambio(char tabla[8][8], int x = 0, int y = 0, int a = 0, int b = 0)
 	swap(tabla, x, y, a, b);
 	tablero(tabla);
 }
+
 int main()
 {
 	char m[8][8] = {{'t', 'c', 'a', 'q', 'r', 'a', 'c', 't'}, {'s', 's', 's', 's', 's', 's', 's', 's'}, {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '}, {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '}, {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '}, {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '}, {'T', 'C', 'A', 'R', 'Q', 'A', 'C', 'T'}, {'s', 's', 's', 's', 's', 's', 's', 's'}};
 	tablero(m);
 	cambio(m);
->>>>>>> 7582bc69a602db3d359111f3b19448c3a11097bb
-}
+)
