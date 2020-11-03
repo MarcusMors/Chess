@@ -1,6 +1,10 @@
 #include <iostream>
 using namespace std;
-
+void swap(char tabla[8][8], int x, int y, int a, int b){
+    int temp = tabla[x][y];
+    tabla[x][y] = tabla[a][b];
+    tabla[a][b] = temp;
+}
 void tablero(char m[8][8]){
     cout<< "-1     0       1       2       3       4       5       6      7"<<endl;
     cout<< "___|_______|_______|_______|_______|_______|_______|_______|_______"<<endl;
@@ -29,11 +33,19 @@ void tablero(char m[8][8]){
     cout<< "7  |   "<<m[7][0]<<"   |   "<<m[7][1]<<"   |   "<<m[7][2]<<"   |   "<<m[7][3]<<"   |   "<<m[7][4]<<"   |   "<<m[7][5]<<"   |   "<<m[7][6]<<"   |   "<<m[7][7]<<" "<<endl;
     cout<< "___|_______|_______|_______|_______|_______|_______|_______|_______"<<endl;
 }
-
+void cambio(char tabla[8][8], int x = 0, int y = 0, int a = 0, int b = 0){
+    cout<<"Ingrese"<<endl;
+    cin>>x>>y;
+    cout<<"Ingrese cambio"<<endl;
+    cin>>a>>b;
+    swap(tabla,x,y,a,b);
+    tablero(tabla);
+}
 int main(){
     char m[8][8]={{'e','h','c','k','q','c','h','e'},{'s','s','s','s','s','s','s','s'},
                   {' ',' ',' ',' ',' ',' ',' ',' '},{' ',' ',' ',' ',' ',' ',' ',' '},
                   {' ',' ',' ',' ',' ',' ',' ',' '},{' ',' ',' ',' ',' ',' ',' ',' '},
                   {'e','h','c','k','q','c','h','e'},{'s','s','s','s','s','s','s','s'}};
     tablero(m);
+    cambio(m);
 }
