@@ -37,6 +37,7 @@ void tablero(char tabla[8][8]) {
     cout << "___|_______|_______|_______|_______|_______|_______|_______|_______" << endl;
 }
 void cambio(char tabla[8][8], int x = 0, int y = 0, int a = 0, int b = 0){
+    cout<< "Probando en clion"<<endl;
     cout<<"Ingrese"<<endl;
     cin>>x>>y;
     cout<<"Ingrese cambio"<<endl;
