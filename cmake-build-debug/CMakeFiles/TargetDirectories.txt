@@ -1,0 +1,3 @@
+C:/Users/Veronica/Desktop/Gabriel/Programming Projects/Proyectos en Clion/Proyecto final/cmake-build-debug/CMakeFiles/Proyecto_final.dir
+C:/Users/Veronica/Desktop/Gabriel/Programming Projects/Proyectos en Clion/Proyecto final/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Veronica/Desktop/Gabriel/Programming Projects/Proyectos en Clion/Proyecto final/cmake-build-debug/CMakeFiles/rebuild_cache.dir
