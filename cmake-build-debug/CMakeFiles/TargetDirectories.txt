@@ -1,0 +1,3 @@
+C:/Users/Los Romeros/Desktop/UCSP - LALO/2do semestre/Ciencia de la computacion I/Codigos/Chess/cmake-build-debug/CMakeFiles/Chess.dir
+C:/Users/Los Romeros/Desktop/UCSP - LALO/2do semestre/Ciencia de la computacion I/Codigos/Chess/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Los Romeros/Desktop/UCSP - LALO/2do semestre/Ciencia de la computacion I/Codigos/Chess/cmake-build-debug/CMakeFiles/rebuild_cache.dir
