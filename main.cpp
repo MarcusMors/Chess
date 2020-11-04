@@ -5,6 +5,7 @@ void swap(char tabla[8][8], int x, int y, int a, int b){
         tabla[x][y] = tabla[a][b];
         tabla[a][b] = temp;
 }
+//Creando el Tablero
 void tablero(char m[8][8]){
     cout << "-1     0       1       2       3       4       5       6      7" << endl;
     cout << "___|_______|_______|_______|_______|_______|_______|_______|_______" << endl;
@@ -43,6 +44,7 @@ void cambio(char tabla[8][8], int x = 0, int y = 0, int a = 0, int b = 0){
     tablero(tabla);
 }
 int main(){
+    //Creando las Fichas
     char m[8][8] = {{'t', 'c', 'a', 'q', 'r', 'a', 'c', 't'},
                     {'s', 's', 's', 's', 's', 's', 's', 's'},
                     {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
